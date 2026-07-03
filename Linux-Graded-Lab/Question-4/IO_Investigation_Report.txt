@@ -1,0 +1,25 @@
+﻿File Access and I/O Investigation Report
+======================================
+
+Prepared By: ANUMULA TEJASWITH REDDY
+Roll Number: 2025eb02056
+Module: Linux Administration / Operating Systems
+Date: 2026-07-02
+
+Objective
+---------
+I tested input and output redirection, error capture, and file descriptor handling in Linux.
+
+Observed Results
+----------------
+- Standard output redirection: output.txt created containing "This is standard output"
+- Append redirection: output.txt also contained "This is appended output"
+- Input redirection: cat < output.txt showed both lines from output.txt
+- Error redirection: error.log captured the ls error message for /nonexistent
+- tee output: combined.txt contained "Data sent through tee" and the same text appeared on screen
+- ulimit value: 1024
+- File descriptors: fd_demo.txt contained "Using file descriptor 3"
+
+Conclusion
+----------
+I saw how stdout, stderr, and file descriptors can be redirected and stored. The examples showed practical I/O behavior on Linux.

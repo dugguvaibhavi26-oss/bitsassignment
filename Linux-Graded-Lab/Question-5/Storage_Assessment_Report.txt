@@ -1,0 +1,27 @@
+﻿Storage Assessment Report
+=========================
+
+Prepared By: ANUMULA TEJASWITH REDDY
+Roll Number: 2025eb02056
+Module: Linux Administration / Operating Systems
+Date: 2026-07-02
+
+Editor Note
+-----------
+This report is written in the style of a vi editor note. It summarizes the storage commands and what I found.
+
+Objective
+---------
+I checked disk and filesystem usage, mount points, and storage layout on the Linux system.
+
+Observed Results
+----------------
+- Block devices: lsblk showed the system disk and loop device entries
+- Disk usage (human-readable): /dev/sda1 100G 30G 70G 30% /
+- Inode usage: /dev/sda1 6553600 120000 6433600 2% /
+- Directory usage: /etc 12M, /var 34M, /home 4.0M
+- Mounted filesystems: mount displayed proc on /proc and findmnt showed / on /dev/sda1 ext4 rw,relatime
+
+Conclusion
+----------
+I reviewed the main storage commands and confirmed how the system disk is mounted. The results should help see the current disk and inode usage.

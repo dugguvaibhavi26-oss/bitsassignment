@@ -1,0 +1,23 @@
+﻿Linux Secure Workspace Report
+=============================
+
+Prepared By: ANUMULA TEJASWITH REDDY
+Roll Number: 2025eb02056
+Module: Linux Administration / Operating Systems
+Date: 2026-07-02
+
+Objective
+---------
+I set up a workspace, created files, and changed permissions to make sure the folder was secure.
+
+Workspace Summary
+-----------------
+- Workspace Directory: ~/Linux-Lab-Workspace
+- Files Created: docs/plan.txt, notes/todo.txt
+- Permissions Applied: plan.txt set to u+rwx,g+rx,o-rwx; todo.txt set to 640
+- Ownership Verified: owner student, group student
+- Umask Value: 0022
+
+Permission Model Notes
+----------------------
+Linux has owner, group, and others for access control. Each file has read, write, and execute bits. I used chmod to change these permissions and checked the effective settings.

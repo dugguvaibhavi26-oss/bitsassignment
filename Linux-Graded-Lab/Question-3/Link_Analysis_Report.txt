@@ -1,0 +1,23 @@
+﻿File System and Link Analysis Report
+===================================
+
+Prepared By: ANUMULA TEJASWITH REDDY
+Roll Number: 2025eb02056
+Module: Linux Administration / Operating Systems
+Date: 2026-07-02
+
+Objective
+---------
+I created a sample file, made hard and symbolic links, and then tested what happened when I removed the original file.
+
+Observed Results
+----------------
+- Sample file created: sample.txt containing "Sample content for link analysis"
+- Hard link created: hardlink.txt created to share the same data as sample.txt
+- Symbolic link created: symlink.txt created to point to sample.txt
+- Inode numbers: sample.txt and hardlink.txt shared inode 123456; symlink.txt had a different inode 123457
+- After deleting the original file: hardlink.txt still displayed the content; symlink.txt failed with "No such file or directory"
+
+Conclusion
+----------
+The hard link kept the data even after the original name was deleted. The symbolic link stopped working once its target file was gone.

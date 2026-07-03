@@ -6,9 +6,9 @@
 echo "Sample content for link analysis" > sample.txt
 ```
 ### Purpose
-I created a simple file to use for the link tests.
-### Observation
-The file was written without any output. I could check it later with cat or ls.
+I created a sample data file that would be used to compare link behavior.
+### Result
+The file was created with the expected text and could be inspected with standard tools.
 
 ## Command
 
@@ -16,9 +16,9 @@ The file was written without any output. I could check it later with cat or ls.
 ln sample.txt hardlink.txt
 ```
 ### Purpose
-I made a hard link to the original file.
-### Observation
-The hard link was created with the same content. It should act like another name for the same file.
+I created a hard link to the sample file so I could compare inode sharing.
+### Result
+hardlink.txt was created successfully and pointed to the same underlying data as sample.txt.
 
 ## Command
 
@@ -26,9 +26,9 @@ The hard link was created with the same content. It should act like another name
 ln -s sample.txt symlink.txt
 ```
 ### Purpose
-I created a symbolic link that points to the sample file.
-### Observation
-The symlink appeared in the folder and pointed back to sample.txt. It shows the target path rather than duplicating the file.
+I created a symbolic link to the sample file to observe its referencing behavior.
+### Result
+symlink.txt was added and pointed to sample.txt rather than containing its own data.
 
 ## Command
 
@@ -36,9 +36,9 @@ The symlink appeared in the folder and pointed back to sample.txt. It shows the 
 ls -li sample.txt hardlink.txt symlink.txt
 ```
 ### Purpose
-I wanted to compare inode numbers for the files.
-### Observation
-The hard link shared the same inode with the original file. The symlink had a different inode number.
+I compared the inode and file information for the files and links.
+### Result
+The hard link shared the same inode as sample.txt, while the symlink had a distinct inode and target path.
 
 ## Command
 
@@ -46,9 +46,9 @@ The hard link shared the same inode with the original file. The symlink had a di
 stat sample.txt hardlink.txt symlink.txt
 ```
 ### Purpose
-I checked the file metadata for the links and original file.
-### Observation
-The output showed size, inode, and timestamps. It confirmed the file relationships for the report.
+I checked the metadata for the sample file and both links.
+### Result
+The output confirmed the shared data for sample.txt and hardlink.txt, while symlink.txt showed link metadata.
 
 ## Command
 
@@ -56,9 +56,9 @@ The output showed size, inode, and timestamps. It confirmed the file relationshi
 rm sample.txt
 ```
 ### Purpose
-I removed the original file to test link behavior.
-### Observation
-The original name disappeared from the directory. I then checked whether the links still worked.
+I deleted the original file to test how each link behaved after removal.
+### Result
+The sample file name was removed, leaving the links behind.
 
 ## Command
 
@@ -66,9 +66,9 @@ The original name disappeared from the directory. I then checked whether the lin
 cat hardlink.txt
 ```
 ### Purpose
-I read the hard link after deleting the original file.
-### Observation
-The hard link still showed the original text. That proved it still pointed to the same data.
+I verified that the hard link still provided access to the file contents.
+### Result
+hardlink.txt continued to display the original text, proving the data remained available.
 
 ## Command
 
@@ -76,6 +76,6 @@ The hard link still showed the original text. That proved it still pointed to th
 cat symlink.txt
 ```
 ### Purpose
-I tried to read the symbolic link after deleting its target.
-### Observation
-The symlink failed because the target was gone. That showed the symlink points to a file path rather than content.
+I checked whether the symbolic link still resolved after its target was deleted.
+### Result
+symlink.txt failed because the target was no longer present, demonstrating broken symlink behavior.

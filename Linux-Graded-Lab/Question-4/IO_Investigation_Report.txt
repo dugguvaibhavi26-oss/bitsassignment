@@ -1,14 +1,14 @@
 ﻿File Access and I/O Investigation Report
 ======================================
 
-Prepared By: ANUMULA TEJASWITH REDDY
-Roll Number: 2025eb02056
+Prepared By: Vaibhavi Duggu
+Roll Number: 2025EB02070
 Module: Linux Administration / Operating Systems
 Date: 2026-07-02
 
 Objective
 ---------
-I tested input and output redirection, error capture, and file descriptor handling in Linux.
+I explored Linux I/O redirection, error handling, and file descriptor usage through practical examples.
 
 Observed Results
 ----------------

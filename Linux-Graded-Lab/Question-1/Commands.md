@@ -6,9 +6,9 @@
 whoami
 ```
 ### Purpose
-I ran this to check which user account was active in the terminal.
-### Observation
-It showed the username that I was logged in as. I used this to confirm I was working in the right environment.
+I used this command to confirm which user profile the shell was running under.
+### Result
+The output displayed my current username and verified the session was active for the correct account.
 
 ## Command
 
@@ -16,9 +16,9 @@ It showed the username that I was logged in as. I used this to confirm I was wor
 groups
 ```
 ### Purpose
-I wanted to see which groups my account belonged to.
-### Observation
-The output listed several groups on one line. It helped me understand my access rights in the system.
+I checked the group memberships assigned to my Linux account.
+### Result
+The command returned a list of groups that define my system privileges and access.
 
 ## Command
 
@@ -26,9 +26,9 @@ The output listed several groups on one line. It helped me understand my access 
 echo $SHELL
 ```
 ### Purpose
-I used this to find the current shell I was using.
-### Observation
-The result showed the shell path, like /bin/bash. This told me the session was running the expected shell.
+I verified the active shell environment for this session.
+### Result
+The output showed /bin/bash, confirming that Bash was the login shell.
 
 ## Command
 
@@ -36,9 +36,9 @@ The result showed the shell path, like /bin/bash. This told me the session was r
 pwd
 ```
 ### Purpose
-I ran this to check my current working directory.
-### Observation
-It printed the full path where I was working. This confirmed I was in the right folder for the lab.
+I confirmed the present working directory for the lab tasks.
+### Result
+The command printed the full path currently in use, ensuring I was in the correct directory.
 
 ## Command
 
@@ -46,9 +46,9 @@ It printed the full path where I was working. This confirmed I was in the right 
 ls -la
 ```
 ### Purpose
-I listed all files and folders to see what was in the current directory.
-### Observation
-The output included hidden files and showed permissions and sizes. I could see the layout of the folder clearly.
+I listed all entries, including hidden files, in the current folder.
+### Result
+The listing showed file names, ownership, permissions, and hidden files so I could inspect the environment.
 
 ## Command
 
@@ -56,6 +56,6 @@ The output included hidden files and showed permissions and sizes. I could see t
 ping -c 3 8.8.8.8
 ```
 ### Purpose
-I tested the network connection to a public IP address.
-### Observation
-All packets were replied to with no loss. This showed the network connection was working.
+I verified the network connection by sending ping packets to a public DNS server.
+### Result
+All three packets were returned successfully, showing that the network was reachable.

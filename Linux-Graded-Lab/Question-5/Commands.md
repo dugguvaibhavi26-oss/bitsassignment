@@ -6,9 +6,9 @@
 lsblk
 ```
 ### Purpose
-I used this to see the disks and partitions on the system.
-### Observation
-The output listed block devices and their mount points. I could tell which disks were attached.
+I listed block devices and their associated partitions.
+### Result
+The output displayed the storage devices on the machine and the mount points in use.
 
 ## Command
 
@@ -16,9 +16,9 @@ The output listed block devices and their mount points. I could tell which disks
 df -h
 ```
 ### Purpose
-I checked how much disk space was used and available.
-### Observation
-The report showed sizes in human-readable form. I could see which filesystems had more free space.
+I checked disk usage in a human-readable format.
+### Result
+The report showed used and available space for mounted filesystems.
 
 ## Command
 
@@ -26,9 +26,9 @@ The report showed sizes in human-readable form. I could see which filesystems ha
 df -i
 ```
 ### Purpose
-I checked inode usage on the mounted filesystems.
-### Observation
-The output showed how many inodes were used and free. I used it to see if any filesystem was low on inodes.
+I checked inode consumption on the system partitions.
+### Result
+The output showed inode totals and usage percentages, helping identify any inode pressure.
 
 ## Command
 
@@ -36,9 +36,9 @@ The output showed how many inodes were used and free. I used it to see if any fi
 du -sh /etc /var /home
 ```
 ### Purpose
-I wanted to compare the sizes of common directories.
-### Observation
-The command printed the total size of each directory. It helped me see which folders used the most space.
+I compared the total size of common directories.
+### Result
+The summary showed the storage footprint for /etc, /var, and /home.
 
 ## Command
 
@@ -46,9 +46,9 @@ The command printed the total size of each directory. It helped me see which fol
 mount | column -t
 ```
 ### Purpose
-I listed the mounted filesystems in a cleaner table format.
-### Observation
-The mount points and device names were easier to read. It showed the filesystem type and options too.
+I displayed mounted filesystems in aligned columns for easier reading.
+### Result
+The mounted filesystems, devices, and mount options were presented in a clean table.
 
 ## Command
 
@@ -56,6 +56,6 @@ The mount points and device names were easier to read. It showed the filesystem 
 findmnt -no TARGET,SOURCE,FSTYPE,OPTIONS /
 ```
 ### Purpose
-I looked up the root filesystem mount details.
-### Observation
-The output showed the root mount source and filesystem type. I confirmed the options used for the root mount.
+I inspected the root filesystem mount details directly.
+### Result
+The command showed the root mount point, source device, filesystem type, and mount options.

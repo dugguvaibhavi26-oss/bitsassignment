@@ -1,14 +1,14 @@
 ﻿Storage Assessment Report
 =========================
 
-Prepared By: ANUMULA TEJASWITH REDDY
-Roll Number: 2025eb02056
+Prepared By: Vaibhavi Duggu
+Roll Number: 2025EB02070
 Module: Linux Administration / Operating Systems
 Date: 2026-07-02
 
 Editor Note
 -----------
-This report is written in the style of a vi editor note. It summarizes the storage commands and what I found.
+This report is written in a concise style and summarizes the storage commands and the key findings.
 
 Objective
 ---------

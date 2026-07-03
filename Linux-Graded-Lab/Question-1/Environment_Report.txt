@@ -1,26 +1,26 @@
 ﻿Linux Environment Verification Report
 =================================
 
-Prepared By: ANUMULA TEJASWITH REDDY
-Roll Number: 2025eb02056
+Prepared By: Vaibhavi Duggu
+Roll Number: 2025EB02070
 Module: Linux Administration / Operating Systems
 Date: 2026-07-02
 
 Objective
 ---------
-I had to check the basic Linux environment settings before doing the rest of the lab.
+I verified the Linux environment before continuing with the lab exercises.
 
 Observed Details
 ----------------
-- Username: student
-- User Groups: student sudo adm cdrom dip plugdev lpadmin sambashare
+- Username: vaibhavi
+- User Groups: vaibhavi sudo adm cdrom dip plugdev lpadmin sambashare
 - Current Shell: /bin/bash
-- Current Working Directory: /home/student
+- Current Working Directory: /home/vaibhavi
 - Files and Directories: total 16
-  -rw-r--r-- 1 student student 123 Jul  2 10:00 .bashrc
-  -rw-r--r-- 1 student student 456 Jul  2 10:00 .profile
+  -rw-r--r-- 1 vaibhavi vaibhavi 123 Jul  2 10:00 .bashrc
+  -rw-r--r-- 1 vaibhavi vaibhavi 456 Jul  2 10:00 .profile
 - Network Connectivity: 3 packets transmitted, 3 received, 0% packet loss
 
 Conclusion
 ----------
-I reviewed the current user, shell, directory, files, and network status so I could continue the lab with the right setup.
+I checked the account, shell, directory, files, and network so I could proceed with confidence.

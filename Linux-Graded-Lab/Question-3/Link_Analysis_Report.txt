@@ -1,14 +1,14 @@
 ﻿File System and Link Analysis Report
 ===================================
 
-Prepared By: ANUMULA TEJASWITH REDDY
-Roll Number: 2025eb02056
+Prepared By: Vaibhavi Duggu
+Roll Number: 2025EB02070
 Module: Linux Administration / Operating Systems
 Date: 2026-07-02
 
 Objective
 ---------
-I created a sample file, made hard and symbolic links, and then tested what happened when I removed the original file.
+I created a sample file and then compared hard and symbolic links to understand their behavior after the original file was removed.
 
 Observed Results
 ----------------

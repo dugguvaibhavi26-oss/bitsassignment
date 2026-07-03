@@ -4,35 +4,35 @@
 ```text
 No output if the command succeeds.
 ```
-The file was created and it did not print anything to the terminal. I used ls to check that output.txt existed.
+The command redirected console output into a file, creating output.txt with the given text.
 
 ### cat < output.txt
 ```text
 This is standard output
 This is appended output
 ```
-The redirected input showed the contents of output.txt. It confirmed both lines were saved in the file.
+Input redirection displayed the contents of output.txt, showing both lines saved earlier.
 
 ### ls /nonexistent 2> error.log
 ```text
-No terminal output if the error is redirected successfully.
+No output on the terminal if redirection works.
 ```
-The error message was hidden from the terminal. I then opened error.log to see the failure text.
+The error from the failing ls command was captured in error.log instead of being displayed.
 
 ### echo "Data sent through tee" | tee combined.txt
 ```text
 Data sent through tee
 ```
-The text appeared on the screen and got saved to combined.txt. I verified the file had the same line.
+The line was output to the screen and written into combined.txt at the same time.
 
 ### ulimit -n
 ```text
 1024
 ```
-The shell showed the open-file limit. I wrote down the number for the lab report.
+The shell reported the limit on open file descriptors for the current process.
 
 ### lsof +D .
 ```text
 COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME
 ```
-The command listed open files in the current directory. It helped me see what processes were using files there.
+This command listed open file handles in the current directory, useful for tracking active file usage.

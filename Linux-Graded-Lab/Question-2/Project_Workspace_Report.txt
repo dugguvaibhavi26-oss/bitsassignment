@@ -1,21 +1,21 @@
 ﻿Linux Secure Workspace Report
 =============================
 
-Prepared By: ANUMULA TEJASWITH REDDY
-Roll Number: 2025eb02056
+Prepared By: Vaibhavi Duggu
+Roll Number: 2025EB02070
 Module: Linux Administration / Operating Systems
 Date: 2026-07-02
 
 Objective
 ---------
-I set up a workspace, created files, and changed permissions to make sure the folder was secure.
+I created a secure workspace, added the required files, and adjusted permissions to protect the content.
 
 Workspace Summary
 -----------------
 - Workspace Directory: ~/Linux-Lab-Workspace
 - Files Created: docs/plan.txt, notes/todo.txt
 - Permissions Applied: plan.txt set to u+rwx,g+rx,o-rwx; todo.txt set to 640
-- Ownership Verified: owner student, group student
+- Ownership Verified: owner vaibhavi, group vaibhavi
 - Umask Value: 0022
 
 Permission Model Notes

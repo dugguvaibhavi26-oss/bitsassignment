@@ -4,10 +4,10 @@
 Linux Graded Lab Assignment
 
 ## Student Name
-ANUMULA TEJASWITH REDDY
+Vaibhavi Duggu
 
 ## Roll Number
-2025eb02056
+2025EB02070
 
 ## Module Name
 Linux Administration / Operating Systems
@@ -55,4 +55,4 @@ Note: screenshot folders are present but currently empty; add image evidence bef
 4. Replace placeholders with actual command output if needed.
 5. Verify that the work is complete for submission.
 
-The files are set up for a student lab submission.
+This submission contains the completed lab files ready for review.

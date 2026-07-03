@@ -8,11 +8,11 @@ The folders were created without errors. I checked the workspace and saw all thr
 
 ### ls -l ~/Linux-Lab-Workspace
 ```text
-drwxr-xr-x 2 student student 4096 Jul  2 10:30 docs
-drwxr-xr-x 2 student student 4096 Jul  2 10:30 notes
-drwxr-xr-x 2 student student 4096 Jul  2 10:30 archive
+drwxr-xr-x 2 vaibhavi vaibhavi 4096 Jul  2 10:30 docs
+drwxr-xr-x 2 vaibhavi vaibhavi 4096 Jul  2 10:30 notes
+drwxr-xr-x 2 vaibhavi vaibhavi 4096 Jul  2 10:30 archive
 ```
-The list showed the new directories and their access modes. It confirmed the workspace structure was set up right.
+The permissions output confirmed the workspace directories were created for my user. This showed that the folder structure was available for the lab files.
 
 ### chmod 640 ~/Linux-Lab-Workspace/notes/todo.txt
 ```text
